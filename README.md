@@ -10,6 +10,15 @@
 
 ![Architecture](https://github.com/g0-Builder-J2RM/g0-Builder-J2RM/blob/master/J2RM%20-%20Architecture.png)
 
+## Overview Demo
+
+- [ISWC 2020 - Posters & Demos Track: demo videos](https://bit.ly/3h5iE5M)
+
+## Related publication
+
+- [J2RM: An ontology-based JSON-to-RDF Mapping tool](http://ceur-ws.org/Vol-2721/paper593.pdf "ISWC 2020 Posters, Demos, and Industry Tracks.  Proceedings of the ISWC 2020 Demos and Industry Tracks: From Novel Ideas to Industrial Practice; co-located with 19th International Semantic Web Conference (ISWC 2020).  Globally online, November 1-6, 2020 (UTC).  Pp. 368-373")
+
+
 ## Contacts
 
 - Sergio Rodriguez <`Sergio.RodriguezMendez [at] anu.edu.au`>
