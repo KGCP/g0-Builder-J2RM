@@ -1,0 +1,72 @@
+{
+  "_id": "1b9d05b641c93131c24be9077b9e7421",
+  "_rev": "1-cbe07196fe38d415d0f9fdbc8ddd638f",
+  "General-Metadata": {
+    "FILENAME": "1001-conservation-advice-18012019.pdf",
+    "SEPARATOR": "\\",
+    "PARENT": "E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\conservation_advices\\ps",
+    "CANONICALPATH": "E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\conservation_advices\\ps\\1001-conservation-advice-18012019.pdf",
+    "ABSOLUTEPATH": "E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\conservation_advices\\ps\\1001-conservation-advice-18012019.pdf",
+    "PATH": "E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\conservation_advices\\ps\\1001-conservation-advice-18012019.pdf",
+    "FILE": true,
+    "DIRECTORY": false,
+    "FILELENGTH": 266286,
+    "HIDDEN": false,
+    "ABSOLUTE": true,
+    "URL": "file:/E:/_temp/DepFin-Project/DoEE_endangered-species/CAsAndRPs/conservation_advices/ps/1001-conservation-advice-18012019.pdf",
+    "URI": "file:/E:/_temp/DepFin-Project/DoEE_endangered-species/CAsAndRPs/conservation_advices/ps/1001-conservation-advice-18012019.pdf",
+    "READ": true,
+    "WRITE": true,
+    "EXTENSION": "pdf",
+    "MODIFIED": "2019-11-22 02:15:00",
+    "DATE": 20191122,
+    "DATEPATTERN": "yyyyMMdd",
+    "TIME": 21500000,
+    "TIMEPATTERN": "HHmmssSSS",
+    "TYPE": "application/pdf",
+    "PID": "null",
+    "OID": "null",
+    "FID": "null",
+    "PROCESSOR": "unknown"
+  },
+  "PDF-META": {
+    "DOC-ID": "D67E904AE8986A4C8852D839C091A27B",
+    "ITERATION-ID": "B36135ABB91E5645812025F9150631AC",
+    "ORIGINAL": false,
+    "TITLE": null,
+    "LANGUAGE": null,
+    "AUTHOR": null,
+    "CREATOR": null,
+    "SUBJECT": null,
+    "PRODUCER": null,
+    "KEYWORDS": null,
+    "CREATION-DATE": "unavailable",
+    "MODIFIED-DATE": "unavailable",
+    "HAS-FORMS": false,
+    "HAS-METADATA-STREAM": false,
+    "HAS-OUTLINE": false,
+    "HAS-THREADS": false,
+    "TAGGED": false,
+    "PAGE-LAYOUT": "SinglePage",
+    "PAGE-MODE": "UseNone",
+    "TRAPPED": null,
+    "VERSION": 1.6,
+    "SECURITY": {
+      "ENCRYPTED": false
+    }
+  },
+  "Use-Case$Folder": "ps",
+  "Specific-Metadata": { },
+  "Associated-Metadata": [
+    {
+      "asset_type": "ps",
+      "listed_id": "1001",
+      "Sci_Name": "Botaurus poiciloptilus",
+      "ref_type": "CWLTH CONSERVATION ADVICE",
+      "url": "http://www.environment.gov.au/biodiversity/threatened/species/pubs/1001-conservation-advice-18012019.pdf",
+      "file_name": "1001-conservation-advice-18012019.pdf",
+      "Row_Number_in_Spreadsheet": 417,
+      "Species_WikiData_Entity_URI": "http://www.wikidata.org/entity/Q783076"
+    }
+  ]
+}

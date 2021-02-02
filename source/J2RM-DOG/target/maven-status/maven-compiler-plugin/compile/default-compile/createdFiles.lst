@@ -1,0 +1,11 @@
+au\edu\anu\cecs\rscs\agrif_project\Graph.class
+au\edu\anu\cecs\rscs\agrif_project\ConfigJSON.class
+au\edu\anu\cecs\rscs\agrif_project\Graph$1.class
+au\edu\anu\cecs\rscs\agrif_project\CouchDB.class
+au\edu\anu\cecs\rscs\agrif_project\Builder.class
+au\edu\anu\cecs\rscs\agrif_project\Document.class
+au\edu\anu\cecs\rscs\agrif_project\DOG_Registry.class
+au\edu\anu\cecs\rscs\agrif_project\GraphScope.class
+au\edu\anu\cecs\rscs\agrif_project\JSON_Path.class
+au\edu\anu\cecs\rscs\agrif_project\NHMRC_Grants_Graph.class
+au\edu\anu\cecs\rscs\agrif_project\DomainOntologyGraph.class

@@ -1,0 +1,94 @@
+{
+	"$-exec": "DoF-PBS-Data",
+	"VUS": [
+		{
+			"SPARQL-endpoint": "http://rsmdb01.nci.org.au:8890/sparql/",
+			"JDBC-connection": "jdbc:virtuoso://rsmdb01.nci.org.au:1111/charset=UTF-8/log_enable=2",
+			"User": "<USER>",
+			"Password": "<PASSWORD>",
+			"Scope": "PRIVATE"
+		},
+		{
+			"SPARQL-endpoint": "http://rsmsrv01.nci.org.au:8890/sparql/",
+			"JDBC-connection": "jdbc:virtuoso://rsmsrv01.nci.org.au:1111/charset=UTF-8/log_enable=2",
+			"User": "<USER>",
+			"Password": "<PASSWORD>",
+			"Scope": "PUBLIC"
+		}
+	],
+	"CouchDB": {
+		"EndPoint": "http://rsmdb01.nci.org.au:5984",
+		"User": "<USER>",
+		"Password": "<PASSWORD>",
+		"Host": "rsmdb01.nci.org.au:5984",
+		"Operations":
+		{
+			"UUIDS": "_uuids",
+			"All-Docs": "_all_docs",
+			"Find": "_find"
+		}
+	},
+	"$-onto": {
+		"@latest": "https://gitlab.anu.edu.au/u5127790/agrif/blob/master/ont/agrif_v09.ttl",
+		"ag-pf": "ag",
+		"ag-ns": "http://linked.data.gov.au/def/agrif#",
+		"dc-pf": "dc",
+		"dc-ns": "http://purl.org/dc/elements/1.1/",
+		"dct-pf": "dct",
+		"dct-ns": "http://purl.org/dc/terms/",
+		"dcat-pf": "dcat",
+		"dcat-ns": "http://www.w3.org/ns/dcat#",
+		"is-a": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+		"sameAs": "http://www.w3.org/2002/07/owl#sameAs",
+		"label": "http://www.w3.org/2000/01/rdf-schema#label",
+		"JSON-mapping": "http://linked.data.gov.au/def/agrif-metadata#JSON-mapping",
+		"graph-scope":  "http://linked.data.gov.au/def/agrif-metadata#graph-scope",
+		"named-graph":  "http://linked.data.gov.au/def/agrif-metadata#named-graph"
+	},
+	"DoEE-Assessments": {
+		"CouchDB.Database": "doee-assessments",
+		"VUS.Graph-0": "http://rsmdb01.nci.org.au/agrif/environment/assessment/v0",
+		"g0-ns":       "http://linked.data.gov.au/dataset/environment/assessment#",
+		"onto": "DoEE - Assessments_v01.owl"
+	},
+	"DoEE-Species": {
+		"CouchDB.Database": "doee-species",
+		"VUS.Graph-0": "http://rsmdb01.nci.org.au/agrif/environment/species/v0",
+		"g0-ns":       "http://linked.data.gov.au/dataset/environment/species#",
+		"onto": "DoEE - Endangered Species - CAs and RPs_v01.owl"
+	},
+	"NHMRC-Grants": {
+		"CouchDB.Database": "nhmrc-grants",
+		"VUS.Graph-0": "http://rsmdb01.nci.org.au/agrif/nhmrc/grants/v0",
+		"VUS.Graph-0.Public": "http://rsmsrv01.nci.org.au/agrif/nhmrc/grants/v0",
+		"clear-graphs": 0,
+		"complete-PRIVATE-graph": 1,
+		"g0-ns":       "http://linked.data.gov.au/dataset/nhmrc/grants#",
+		"onto": "NHMRC - Application Grants_v03.owl"
+	},
+	"DoF-Procurements": {
+		"CouchDB.Database": "dof-procurements",
+		"VUS.Graph-0": "http://rsmdb01.nci.org.au/agrif/finance/procurement/v0",
+		"clear-graphs": 0,
+		"complete-PRIVATE-graph": 1,
+		"g0-ns":       "http://linked.data.gov.au/dataset/finance/procurement#",
+		"onto": "DoF - Procurements_v01.owl"
+	},
+	"DoF-PBS-Data": {
+		"CouchDB.Database": "dof-pbs-data",
+		"VUS.Graph-0": "http://rsmdb01.nci.org.au/agrif/finance/pbs-data/v0",
+		"clear-graphs": 1,
+		"complete-PRIVATE-graph": 1,
+		"g0-ns":       "http://linked.data.gov.au/dataset/finance/pbs-data#",
+		"onto": "DoF - PBS-Data_v01.owl"
+	},
+	"test": {
+		"CouchDB.Database": "$test$",
+		"VUS.Graph-0":        "http://rscs.cecs.anu.edu.au/agrif/test/g0-creation/",
+		"VUS.Graph-0.Public": "http://rscs.cecs.anu.edu.au/agrif/test/g0-creation/",
+		"clear-graphs": 1,
+		"complete-PRIVATE-graph": 1,
+		"g0-ns":       "http://linked.data.gov.au/dataset/nhmrc/grants#",
+		"onto": "NHMRC - Application Grants_v03.owl"
+	}
+}

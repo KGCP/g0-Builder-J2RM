@@ -1,0 +1,149 @@
+{
+  "_id": "bb3f894aa039c20598efe6d09a593ed3",
+  "_rev": "1-0c0dea7bc88196e6d2e1aff8618bc34b",
+  "General-Metadata": {
+    "FILENAME": "APP1020817_4 APP1020817_Frentiu.pdf",
+    "SEPARATOR": "\\",
+    "PARENT": "\\\\?\\E:\\_temp\\DepFin-Project\\NHMRC\\ANU_History\\Project Grants\\2011\\APP1020817",
+    "CANONICALPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\NHMRC\\ANU_History\\Project Grants\\2011\\APP1020817\\APP1020817_4 APP1020817_Frentiu.pdf",
+    "ABSOLUTEPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\NHMRC\\ANU_History\\Project Grants\\2011\\APP1020817\\APP1020817_4 APP1020817_Frentiu.pdf",
+    "FILE": "True",
+    "DIRECTORY": "False",
+    "FILELENGTH": 686042,
+    "EXTENSION": "pdf",
+    "TYPE": "application/pdf",
+    "MODIFIED": "2011-11-29 17:14:34",
+    "DATE": "20111129",
+    "DATEPATTERN": "yyyyMMdd",
+    "TIME": "171434",
+    "TIMEPATTERN": "HHmmSS",
+    "CREATED": "2020-01-31 14:07:02.155591",
+    "CREATED-DATE": "20200131",
+    "CREATED-TIME": "140702"
+  },
+  "Use-Case$Folder": "APP1020817",
+  "Specific-Metadata": { },
+  "Associated-Metadata": {
+    "Application_ID": "APP1020817",
+    "Application_Year": "2011",
+    "CIA_ID_Application": "5036297",
+    "CIA_Name_Application": "Dr Francesca Frentiu",
+    "Scheme": "New Investigator Grant",
+    "Application_AdminInst_Name": "Monash University",
+    "Application_AdminInst_State": "VIC",
+    "Application_AdminInst_Sector": "University",
+    "Final_Score": "4.665",
+    "Final_Score_Linearised": "5.122",
+    "Application_Outcome": "Funded",
+    "Title_Cleaned": "Can Dengue and Chikungunya Viruses Adapt to New Biocontrol Methods?",
+    "Keywords": "dengue virus | adaptation | comparative genomics | evolution | host/pathogen interaction",
+    "Media_Summary": "Dengue and chikungunya are mosquito-transmitted viruses that present significant public health threats to Australia and the Asia-Pacific. This project will investigate whether dengue and chikungunya can adapt in response to a bacterium that limits replication of the viruses in the mosquito.  The research will provide critical data to inform new mosquito control methods aimed at breaking the virus transmission cycle.  More broadly, the research will allow us to understand how viruses adapt to strategies aimed at limiting their replication.",
+    "Synopsis": "Dengue and chikungunya viruses are emerging infectious diseases transmitted by mosquito vectors and pose significant health risks to humans.  In the last few decades dengue has become the leading cause of arboviral illness and death, with over 100 million cases occurring annually.  Similarly, millions of cases of chikungunya occur each year and the disease has dramatically expanded its geographic range during the last decade.  The lack of commercially-available vaccines and the difficulty of applying insecticide-based methods of mosquito eradication over large urban areas have spurred the development of new methods of vector control.  An exciting recent development utilizes the insect endosymbiotic bacteria Wolbachia pipientis to reduce the capacity of mosquito populations to transmit viruses.  The principal vector of dengue and chikungunya, Aedes aegypti, when infected with Wolbachia, shows dramatically reduced replication of these viruses.  Although a very promising biocontrol method, Wolbachia also exerts very strong selection pressure on dengue and chikungunya viruses to adapt and recover their ability to replicate in mosquitoes.  I will use experimental evolution together with next-generation sequencing and functional genetic approaches to test whether dengue and chikungunya viruses are able to overcome selection imposed by Wolbachia to recover replication.  Data obtained will be critical to the application of a Wolbachia-based control strategy in the field and will provide important insights into how arboviruses adapt to interventions that limit their replication.  The proposal directly addresses the NHMRC Strategic Plan Initiative Area of Emerging Infections Disease Threats by evaluating the evolutionary consequences of strategies aimed at eliminating arbovirus transmission.",
+    "Broad_Research_Area": "Basic Science",
+    "FOR_Category_Code": "604",
+    "FOR_Category": "GENETICS",
+    "Field_of_Research_Code": "60411",
+    "Field_of_Research": "Population, Ecological and Evolutionary Genetics",
+    "Final_Score_Criteria1": "4.08",
+    "Final_Score_Criteria2": "4.58",
+    "Final_Score_Criteria3": "5.92",
+    "Final_Score_Criteria4": "",
+    "Final_Score_Criteria5": "",
+    "Final_Score_Criteria6": "",
+    "Row_Number_in_Spreadsheet": 51,
+    "ANDS_Grant_Data": [
+      {
+        "description": "Dengue and chikungunya are mosquito-transmitted viruses that present significant public health threats to Australia and the Asia-Pacific. This project will investigate whether dengue and chikungunya can adapt in response to a bacterium that limits replication of the viruses in the mosquito. The research will provide critical data to inform new mosquito control methods aimed at breaking the virus transmission cycle. More broadly, the research will allow us to understand how viruses adapt to strategies aimed at limiting their replication.",
+        "title": "Evolutionary Response of Dengue and Chikungunya Viruses To a Novel Biocontrol Method",
+        "id": "110069",
+        "institutions": [
+          "Queensland University of Technology"
+        ],
+        "key": "http://purl.org/au-research/grants/nhmrc/1020817",
+        "researchers": [
+          "Dr Francesca Frentiu"
+        ],
+        "type": "grant",
+        "status": "closed",
+        "fundingAmount": 421681.9,
+        "fundingScheme": "Project Grants",
+        "startDate": 2012,
+        "endDate": 2016,
+        "dateTimeModified": "2016-05-16T09:56:15Z",
+        "dateTimeCreated": "2013-05-15T07:20:34Z",
+        "funder": [
+          "National Health and Medical Research Council"
+        ],
+        "managingInstitution": [
+          "Queensland University of Technology"
+        ],
+        "principalInvestigator": [
+          "Dr Francesca Frentiu"
+        ],
+        "purl": "http://purl.org/au-research/grants/nhmrc/1020817",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/1020817",
+          "1020817"
+        ],
+        "subjects": [
+          "Population, Ecological and Evolutionary Genetics",
+          "BIOLOGICAL SCIENCES",
+          "GENETICS",
+          "dengue virus",
+          "adaptation",
+          "comparative genomics",
+          "evolution",
+          "host/pathogen interaction"
+        ],
+        "links": [
+          {
+            "rel": "self",
+            "href": "http://researchdata.edu.au/api/v2.0/registry/activities/grants/110069"
+          }
+        ]
+      }
+    ],
+    "Team_Data": [
+      {
+        "Individual_ID": "5036297",
+        "Member_Role": "CIA",
+        "Full_Name": "Dr Francesca Frentiu",
+        "Primary_Institution": "Queensland University of Technology",
+        "ORCID": "https://orcid.org/0000-0001-8628-42",
+        "Row_Number_in_Spreadsheet": 182,
+        "FoR_Data": [
+          {
+            "FOR_Category_Code": "604",
+            "FOR_Category": "GENETICS",
+            "Field_of_Research_Code": "60411",
+            "Field_of_Research": "Population, Ecological and Evolutionary Genetics",
+            "FOR_Date_Start": "1999-03-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 7737
+          },
+          {
+            "FOR_Category_Code": "1108",
+            "FOR_Category": "MEDICAL MICROBIOLOGY",
+            "Field_of_Research_Code": "110804",
+            "Field_of_Research": "Medical Virology",
+            "FOR_Date_Start": "2009-04-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 7738
+          },
+          {
+            "FOR_Category_Code": "1117",
+            "FOR_Category": "PUBLIC HEALTH AND HEALTH SERVICES",
+            "Field_of_Research_Code": "111799",
+            "Field_of_Research": "Public Health and Health Services not elsewhere classified",
+            "FOR_Date_Start": "2009-04-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 7739
+          }
+        ]
+      }
+    ]
+  }
+}

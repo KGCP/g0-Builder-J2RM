@@ -1,0 +1,38 @@
+{
+  "_id": "a42f103b46bd010ca449a624793729dc",
+  "_rev": "1-0415947585ef1d8bac7b6ee7d4d5ccac",
+  "General-Metadata": {
+    "FILENAME": "111-conservation-advice.pdf",
+    "SEPARATOR": "\\",
+    "PARENT": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\conservation_advices\\tc",
+    "CANONICALPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\conservation_advices\\tc\\111-conservation-advice.pdf",
+    "ABSOLUTEPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\conservation_advices\\tc\\111-conservation-advice.pdf",
+    "FILE": "True",
+    "DIRECTORY": "False",
+    "FILELENGTH": 275512,
+    "EXTENSION": "pdf",
+    "TYPE": "application/pdf",
+    "MODIFIED": "2019-11-22 02:21:00",
+    "DATE": "20191122",
+    "DATEPATTERN": "yyyyMMdd",
+    "TIME": "022100",
+    "TIMEPATTERN": "HHmmSS",
+    "CREATED": "2020-01-17 13:03:57.782511",
+    "CREATED-DATE": "20200117",
+    "CREATED-TIME": "130357"
+  },
+  "Use-Case$Folder": "tc",
+  "Specific-Metadata": { },
+  "Associated-Metadata": [
+    {
+      "asset_type": "tc",
+      "listed_id": "111",
+      "Status": "Endangered",
+      "ref_type": "CWLTH CONSERVATION ADVICE",
+      "url": "http://www.environment.gov.au/biodiversity/threatened/communities/pubs/111-conservation-advice.pdf",
+      "file_name": "111-conservation-advice.pdf",
+      "Row_Number_in_Spreadsheet": 72,
+      "ConservationStatus_WikiData_Entity_URI": "http://www.wikidata.org/entity/Q11394"
+    }
+  ]
+}

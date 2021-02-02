@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://linked.data.gov.au/dataset/environment/species#"
+     xml:base="http://linked.data.gov.au/dataset/environment/species"
+     xmlns:schema="http://schema.org/"
+     xmlns:domo="http://data.anu.edu.au/def/ont/domo#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:agrif-md="http://linked.data.gov.au/def/agrif-metadata#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wd="http://www.wikidata.org/entity/"
+     xmlns:agrif="http://linked.data.gov.au/def/agrif#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:doee-species="http://linked.data.gov.au/dataset/environment/species#">
+    <owl:Ontology rdf:about="http://linked.data.gov.au/dataset/environment/species">
+        <owl:versionIRI rdf:resource="http://linked.data.gov.au/dataset/environment/species/0.1"/>
+        <dc:creator>Sergio J. Rodriguez Mendez</dc:creator>
+        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+        <dcterms:modified xml:lang="en">2020-04-20</dcterms:modified>
+        <rdfs:label xml:lang="en">AGRIF Project: Domain-ontology for DoEE-Species.</rdfs:label>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-19</dcterms:created>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://linked.data.gov.au/dataset/environment/species#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix xml:lang="en">doee-species</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif-metadata#JSON-mapping -->
+
+    <owl:AnnotationProperty rdf:about="http://linked.data.gov.au/def/agrif-metadata#JSON-mapping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#hasAssetType -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/environment/species#hasAssetType">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/environment/species#AssetType"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0</agrif-md:JSON-mapping>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#hasReferenceType -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/environment/species#hasReferenceType">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/environment/species#ReferenceType"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0</agrif-md:JSON-mapping>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/about -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/about">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q16521"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q82673"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0</agrif-md:JSON-mapping>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.anu.edu.au/def/ont/domo#keyword -->
+
+    <owl:DatatypeProperty rdf:about="http://data.anu.edu.au/def/ont/domo#keyword">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0/Sci_Name || /Associated-Metadata/0/Status</agrif-md:JSON-mapping>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#URL -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/environment/species#URL">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0/url</agrif-md:JSON-mapping>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#WebLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/environment/species#WebLocation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0/Web_location</agrif-md:JSON-mapping>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#description -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/environment/species#description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0/Description</agrif-md:JSON-mapping>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#listedID -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/environment/species#listedID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/0/listed_id</agrif-md:JSON-mapping>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.anu.edu.au/def/ont/domo#Document -->
+
+    <owl:Class rdf:about="http://data.anu.edu.au/def/ont/domo#Document"/>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#AssetType -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/environment/species#AssetType">
+        <agrif-md:JSON-mapping>Associated-Metadata/asset_type!</agrif-md:JSON-mapping>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#CA_RP_Publication -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/environment/species#CA_RP_Publication">
+        <rdfs:subClassOf rdf:resource="http://data.anu.edu.au/def/ont/domo#Document"/>
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/def/agrif#DigitalArtefact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/environment/species#hasAssetType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/environment/species#AssetType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/environment/species#hasReferenceType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/environment/species#ReferenceType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/about"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/environment/species#URL"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/environment/species#listedID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data.anu.edu.au/def/ont/domo#keyword"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/environment/species#WebLocation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/environment/species#description"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>$DOC_ID$</agrif-md:JSON-mapping>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/environment/species#ReferenceType -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/environment/species#ReferenceType">
+        <agrif-md:JSON-mapping>Associated-Metadata/ref_type!</agrif-md:JSON-mapping>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif#DigitalArtefact -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/def/agrif#DigitalArtefact"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16521 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q16521">
+        <agrif-md:JSON-mapping>Associated-Metadata/Species_WikiData_Entity_URI#</agrif-md:JSON-mapping>
+        <rdfs:label>taxon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q82673 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q82673">
+        <agrif-md:JSON-mapping>Associated-Metadata/ConservationStatus_WikiData_Entity_URI#</agrif-md:JSON-mapping>
+        <rdfs:label>conservation status</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

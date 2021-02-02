@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://linked.data.gov.au/dataset/environment/assessments#"
+     xml:base="http://linked.data.gov.au/dataset/environment/assessments"
+     xmlns:schema="http://schema.org/"
+     xmlns:domo="http://data.anu.edu.au/def/ont/domo#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:agrif-md="http://linked.data.gov.au/def/agrif-metadata#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wd="http://www.wikidata.org/entity/"
+     xmlns:agrif="http://linked.data.gov.au/def/agrif#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:doee-asm="http://linked.data.gov.au/dataset/environment/assessments#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://linked.data.gov.au/dataset/environment/assessments">
+        <owl:versionIRI rdf:resource="http://linked.data.gov.au/dataset/environment/assessments/0.1"/>
+        <vann:preferredNamespacePrefix xml:lang="en">doee-asm</vann:preferredNamespacePrefix>
+        <dc:creator>Sergio J. Rodriguez Mendez</dc:creator>
+        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-15</dcterms:created>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://linked.data.gov.au/dataset/environment/assessments#</vann:preferredNamespaceUri>
+        <dcterms:modified xml:lang="en">2020-04-20</dcterms:modified>
+        <rdfs:label xml:lang="en">AGRIF Project: Domain-ontology for doee-asm.</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif-metadata#JSON-mapping -->
+
+    <owl:AnnotationProperty rdf:about="http://linked.data.gov.au/def/agrif-metadata#JSON-mapping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/about -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/about">
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q16521"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/about-DoEE-Species</agrif-md:JSON-mapping>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.anu.edu.au/def/ont/domo#keyword -->
+
+    <owl:DatatypeProperty rdf:about="http://data.anu.edu.au/def/ont/domo#keyword">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/about-DoEE-Species/Sci_Name</agrif-md:JSON-mapping>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.anu.edu.au/def/ont/domo#Document -->
+
+    <owl:Class rdf:about="http://data.anu.edu.au/def/ont/domo#Document"/>
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif#DigitalArtefact -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/def/agrif#DigitalArtefact">
+        <rdfs:subClassOf rdf:resource="http://data.anu.edu.au/def/ont/domo#Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/about"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data.anu.edu.au/def/ont/domo#keyword"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>$DOC_ID$#</agrif-md:JSON-mapping>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16521 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q16521">
+        <agrif-md:JSON-mapping>Associated-Metadata/about-DoEE-Species/WikiData_Entity_URI#</agrif-md:JSON-mapping>
+        <rdfs:label>taxon</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

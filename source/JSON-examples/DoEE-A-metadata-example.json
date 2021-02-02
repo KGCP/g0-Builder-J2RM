@@ -1,0 +1,58 @@
+{
+  "_id": "1b9d05b641c93131c24be9077be2fd61",
+  "_rev": "10-d0a718b1a8fc705b7d51a094d648772b",
+  "General-Metadata": {
+    "FILENAME": "2017-7881 Assessment-PD-RFI-Att A-Additional info request.docx",
+    "SEPARATOR": "\\",
+    "PARENT": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_assessments\\2017-7881 Spring Gully CSG North West and North East Development, Qld",
+    "CANONICALPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_assessments\\2017-7881 Spring Gully CSG North West and North East Development, Qld\\2017-7881 Assessment-PD-RFI-Att A-Additional info request.docx",
+    "ABSOLUTEPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_assessments\\2017-7881 Spring Gully CSG North West and North East Development, Qld\\2017-7881 Assessment-PD-RFI-Att A-Additional info request.docx",
+    "FILE": "True",
+    "DIRECTORY": "False",
+    "FILELENGTH": 88502,
+    "EXTENSION": "docx",
+    "TYPE": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "MODIFIED": "2019-09-17 14:54:46",
+    "DATE": "20190917",
+    "DATEPATTERN": "yyyyMMdd",
+    "TIME": "145446",
+    "TIMEPATTERN": "HHmmSS",
+    "CREATED": "2019-09-17 15:03:05.572227",
+    "CREATED-DATE": "20190917",
+    "CREATED-TIME": "150305"
+  },
+  "Use-Case$Folder": "2017-7881 Spring Gully CSG North West and North East Development, Qld",
+  "Specific-Metadata": { },
+  "Associated-Metadata": {
+    "about-DoEE-Species": [
+      {
+        "Sci_Name": "petauroides volans",
+        "WikiData_Entity_URI": "http://www.wikidata.org/entity/Q668004"
+      },
+      {
+        "Sci_Name": "furina dunmalli",
+        "WikiData_Entity_URI": "http://www.wikidata.org/entity/Q2382981"
+      },
+      {
+        "Sci_Name": "chalinolobus dwyeri",
+        "WikiData_Entity_URI": "http://www.wikidata.org/entity/Q305087"
+      },
+      {
+        "Sci_Name": "egernia rugosa",
+        "WikiData_Entity_URI": "http://www.wikidata.org/entity/Q5081013"
+      },
+      {
+        "Sci_Name": "elseya albagula",
+        "WikiData_Entity_URI": "http://www.wikidata.org/entity/Q2270551"
+      },
+      {
+        "Sci_Name": "nyctophilus corbeni",
+        "WikiData_Entity_URI": "http://www.wikidata.org/entity/Q16583283"
+      },
+      {
+        "Sci_Name": "delma torquata",
+        "WikiData_Entity_URI": "http://www.wikidata.org/entity/Q3727533"
+      }
+    ]
+  }
+}

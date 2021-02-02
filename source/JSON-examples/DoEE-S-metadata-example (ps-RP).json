@@ -1,0 +1,39 @@
+{
+  "_id": "a42f103b46bd010ca449a62479e13132",
+  "_rev": "1-33aa3479a1cfbd13a9ed24c9089086fc",
+  "General-Metadata": {
+    "FILENAME": "221-adenanthos-pungens.pdf",
+    "SEPARATOR": "\\",
+    "PARENT": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\recovery_plans\\ps",
+    "CANONICALPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\recovery_plans\\ps\\221-adenanthos-pungens.pdf",
+    "ABSOLUTEPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\recovery_plans\\ps\\221-adenanthos-pungens.pdf",
+    "FILE": "True",
+    "DIRECTORY": "False",
+    "FILELENGTH": 174138,
+    "EXTENSION": "pdf",
+    "TYPE": "application/pdf",
+    "MODIFIED": "2019-11-22 02:22:00",
+    "DATE": "20191122",
+    "DATEPATTERN": "yyyyMMdd",
+    "TIME": "022200",
+    "TIMEPATTERN": "HHmmSS",
+    "CREATED": "2020-01-17 13:04:01.283420",
+    "CREATED-DATE": "20200117",
+    "CREATED-TIME": "130401"
+  },
+  "Use-Case$Folder": "ps",
+  "Specific-Metadata": { },
+  "Associated-Metadata": [
+    {
+      "asset_type": "ps",
+      "listed_id": "10742",
+      "Sci_Name": "Adenanthos pungens subsp. effusus",
+      "ref_type": "CWLTH RECOVERY PLAN",
+      "url": "http://www.environment.gov.au/resource/sprawling-spiky-adenanthos-adenanthos-pungens-subsp-effusus-recovery-plan",
+      "Web_location": "http://www.environment.gov.au/system/files/resources/b248be21-644e-4eb8-aa3d-1a22ba26e232/files/221-adenanthos-pungens.pdf",
+      "file_name": "221-adenanthos-pungens.pdf",
+      "Row_Number_in_Spreadsheet": 15,
+      "Species_WikiData_Entity_URI": "http://www.wikidata.org/entity/Q27828443"
+    }
+  ]
+}

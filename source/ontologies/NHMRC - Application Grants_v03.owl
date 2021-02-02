@@ -1,0 +1,2000 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://linked.data.gov.au/dataset/nhmrc/grants#"
+     xml:base="http://linked.data.gov.au/dataset/nhmrc/grants"
+     xmlns:nhmrc-grants="http://linked.data.gov.au/dataset/nhmrc/grants#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:agrif-md="http://linked.data.gov.au/def/agrif-metadata#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:semcerif="http://eurocris.org/ontology/semcerif#"
+     xmlns:agrif="http://linked.data.gov.au/def/agrif#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:mag-class="http://ma-graph.org/class/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:nhmrc-g0="http://rsmdb01.nci.org.au/agrif/nhmrc/grants/v0"
+     xmlns:nhmrc-g0-public="http://rscs.cecs.anu.edu.au/agrif/test/g0-integration/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants">
+        <owl:versionIRI rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants/0.3"/>
+        <dc:creator>Sergio J. Rodriguez Mendez</dc:creator>
+        <dcterms:contributor xml:lang="en">Kerry Taylor</dcterms:contributor>
+        <dcterms:contributor xml:lang="en">Armin Haller</dcterms:contributor>
+        <owl:versionInfo xml:lang="en">0.3</owl:versionInfo>
+        <rdfs:label xml:lang="en">AGRIF Project: Domain-ontology for NHMRC-Grants.</rdfs:label>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-19</dcterms:created>
+        <vann:preferredNamespacePrefix xml:lang="en">nhmrc-grants</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://linked.data.gov.au/dataset/nhmrc/grants#</vann:preferredNamespaceUri>
+        <dcterms:modified xml:lang="en">2020-07-06</dcterms:modified>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif-metadata#JSON-mapping -->
+
+    <owl:AnnotationProperty rdf:about="http://linked.data.gov.au/def/agrif-metadata#JSON-mapping"/>
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif-metadata#graph-scope -->
+
+    <owl:AnnotationProperty rdf:about="http://linked.data.gov.au/def/agrif-metadata#graph-scope"/>
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif-metadata#named-graph -->
+
+    <owl:AnnotationProperty rdf:about="http://linked.data.gov.au/def/agrif-metadata#named-graph"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <agrif-md:JSON-mapping>Associated-Metadata/Title_Cleaned~@GrantApplication
+Associated-Metadata/ANDS_Grant_Data/title~@Grant</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private@GrantApplication, public@Grant</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0@GrantApplication, nhmrc-g0-public@Grant</agrif-md:named-graph>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#about -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#about">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR"/>
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ResearchInstitution"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/FoR_Data@FoR_Registry-&gt;FoR</agrif-md:JSON-mapping>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/Primary_Institution@ManagingResearchInstitution|=|Associated-Metadata/ANDS_Grant_Data/managingInstitution</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public@ManagingResearchInstitution, private@FoR_Registry</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public@ManagingResearchInstitution, nhmrc-g0@FoR_Registry</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#applicationOf -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#applicationOf">
+        <owl:inverseOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasApplication"/>
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Grant"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/ANDS_Grant_Data</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">application of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#fundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#fundedBy">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Grant"/>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>funded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasApplication -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasApplication">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#GrantApplication"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">has application</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasAssessment -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasAssessment">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Assessment"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>has assessment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasBroadResearchArea -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasBroadResearchArea">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#BroadResearchArea"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">has broad research area</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasFoR -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasFoR">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata@GrantApplication
+/Associated-Metadata@FoR_Category
+Associated-Metadata/Team_Data/FoR_Data/@FoR_Category</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">has FoR</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasFoR_Registry -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasFoR_Registry">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Registry"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/FoR_Data/Field_of_Research_Code</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>The FoR_Registry instances&apos; URI is a composite identifier.
+The range mapping points to the lowest path level of the ID.</rdfs:comment>
+        <rdfs:label xml:lang="en">has FoR registry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasFundingDecision -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasFundingDecision">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FundingDecision"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">has funding decision</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasGrantResearcher -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasGrantResearcher">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#GrantResearcher"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>has grant researcher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasManagingResearchInstitution -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasManagingResearchInstitution">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ManagingResearchInstitution"/>
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ResearchInstitution"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/managingInstitution@Grant</agrif-md:JSON-mapping>
+        <agrif-md:JSON-mapping>Associated-Metadata/Application_AdminInst_Name@GrantApplication</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant managing institution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasORCID -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasORCID">
+        <rdfs:range rdf:resource="http://eurocris.org/ontology/semcerif#ORCID"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">has ORCID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasPeriod">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Period"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>has period</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Researcher"/>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:comment>RDF list model for ChiefInvestigator: introducing a specialization mechanism for properties.
+
+Source:
+&quot;Representing Order in RDF&quot;, &lt;http://infolab.stanford.edu/~stefan/daml/order.html&gt;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-1 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-1">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIA&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-10 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-10">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIJ&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIJ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-2 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-2">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIB&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIB</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-3 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-3">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIC&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIC</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-4 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-4">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CID&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-5 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-5">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIE&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-6 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-6">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIF&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIF</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-7 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-7">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIG&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIG</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-8 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-8">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CIH&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CIH</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-9 -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher-9">
+        <rdfs:subPropertyOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+        <agrif-md:JSON-mapping>D=
+R=Associated-Metadata/Team_Data/Member_Role=&quot;CII&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>CII</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasRole">
+        <owl:inverseOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#isRoleOf"/>
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Role"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data</agrif-md:JSON-mapping>
+        <agrif-md:JSON-mapping>D=Associated-Metadata/Team_Data/Full_Name^@Investigator
+R=Associated-Metadata/ANDS_Grant_Data/researchers</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#hasScheme -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#hasScheme">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Scheme"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">has scheme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#isFoRof -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#isFoRof">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Category"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata@FoR
+Associated-Metadata/Team_Data/FoR_Data/@FoR</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#isRoleOf">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Investigator"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data@ChiefInvestigator</agrif-md:JSON-mapping>
+        <agrif-md:JSON-mapping>D=Associated-Metadata/ANDS_Grant_Data/researchers@GrantResearcher
+R=Associated-Metadata/Team_Data/Full_Name^</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">is role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#primaryAffiliation -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#primaryAffiliation">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ResearchInstitution"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">primary affiliation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#relatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#relatedTo">
+        <rdfs:range rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Grant"/>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasStartedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasStartedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <agrif-md:JSON-mapping>D=
+R=/Associated-Metadata/Application_ID</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#PP_finalScoreLinearised -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#PP_finalScoreLinearised">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Linearised%/Associated-Metadata/Application_Year&lt;2019</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>&quot;Project &amp; Program Grants&quot; (historic data): Final Score Linearised</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#RPcontributionToImpactCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#RPcontributionToImpactCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria5%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Synergy Grants&quot;: Criteria 5=Research program’s contribution to the research impact</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#State -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#State">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Application_AdminInst_State@:Associated-Metadata/Application_AdminInst_Name!</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Managing Institution State</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#acceptedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#acceptedDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>accepted date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#applicantContributionCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#applicantContributionCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria6%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Synergy Grants&quot;: Criteria 6=Applicant&apos;s contribution to the research program</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#applicationID -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#applicationID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Application_ID</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">application ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#code -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#code">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/FOR_Category_Code@FoR_Category
+Associated-Metadata/Team_Data/FoR_Data/FOR_Category_Code@FoR_Category
+Associated-Metadata/Field_of_Research_Code@FoR
+Associated-Metadata/Team_Data/FoR_Data/Field_of_Research_Code@FoR</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#collaborativeGainCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#collaborativeGainCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria3%/Associated-Metadata/Scheme=&quot;Program Grant&quot;&amp;&amp;/Associated-Metadata/Application_Year&lt;2019</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>&quot;Program Grants&quot; (historic data): Criteria 3</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#createdDate -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#createdDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/dateTimeCreated</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant created date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#description -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/description</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#endDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/FoR_Data/FOR_Date_End@FoR_Registry</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private@FoR_Registry, public@Period</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0@FoR_Registry, nhmrc-g0-public@Period</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">end date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#endingYear -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#endingYear">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/endDate</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant ending year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#feasibilityCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#feasibilityCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria4%/Associated-Metadata/Scheme=&quot;Ideas Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Ideas Grants&quot;: Criteria 4=Feasibility</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#finalScore -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#finalScore">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">final score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#fullName -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#fullName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/Full_Name~</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">full name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#funder -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#funder">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/funder</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant funder</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#fundingAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#fundingAmount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/fundingAmount</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant funding amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#fundingScheme -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#fundingScheme">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/fundingScheme</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant funding scheme</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#grantID -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#grantID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/id</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/identifiers</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant identifiers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#innovationAndCreativityCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#innovationAndCreativityCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria2%/Associated-Metadata/Scheme=&quot;Ideas Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Ideas Grants&quot;: Criteria 2=Innovation and Creativity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#investigatorID -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#investigatorID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/Individual_ID</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">investigator ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#isCurrent -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#isCurrent">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <agrif-md:JSON-mapping>B=Associated-Metadata/Team_Data/FoR_Data/FOR_Current=&quot;Yes&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">is current</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#key -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#key">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/key</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant key</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#keyword -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#keyword">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Keywords(&quot; | &quot;)</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">keyword</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#knowledgeGainCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#knowledgeGainCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria1%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Synergy Grants&quot;: Criteria 1=Knowledge gain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#leadershipCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#leadershipCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria7%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Synergy Grants&quot;: Criteria 7=Leadership</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#link -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#link">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/links/href&lt;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant links</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#mediaSummary -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#mediaSummary">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Media_Summary</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">media summary</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#modifiedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#modifiedDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/dateTimeModified</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant modified date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#name -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/FOR_Category~@FoR_Category
+Associated-Metadata/Team_Data/FoR_Data/FOR_Category~@FoR_Category
+Associated-Metadata/Field_of_Research~@FoR
+Associated-Metadata/Team_Data/FoR_Data/Field_of_Research~@FoR
+Associated-Metadata/Team_Data/Primary_Institution~@ResearchInstitution
+Associated-Metadata/Application_AdminInst_Name~@ResearchInstitution</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#publicationsCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#publicationsCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria3%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Synergy Grants&quot;: Criteria 3=Publications</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#purl -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#purl">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/purl</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant purl</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#reachAndSignificanceCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#reachAndSignificanceCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria4%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Synergy Grants&quot;: Criteria 4=Reach and significance of the research impact</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#researchAchievementsCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#researchAchievementsCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria1%/Associated-Metadata/Scheme=&quot;Program Grant&quot;&amp;&amp;/Associated-Metadata/Application_Year&lt;2019</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>&quot;Program Grants&quot; (historic data): Criteria 1</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#researchQualityCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#researchQualityCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria1%/Associated-Metadata/Scheme=&quot;Ideas Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Ideas Grants&quot;: Criteria 1=Research Quality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#researchStrategyCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#researchStrategyCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria2%/Associated-Metadata/Scheme=&quot;Program Grant&quot;&amp;&amp;/Associated-Metadata/Application_Year&lt;2019</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>&quot;Program Grants&quot; (historic data): Criteria 2</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#scientificQualityCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#scientificQualityCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria1%/Associated-Metadata/Scheme!=&quot;Program Grant&quot;&amp;&amp;/Associated-Metadata/Application_Year&lt;2019</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>&quot;Project Grants&quot; (historic data): Criteria 1</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#sector -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#sector">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Application_AdminInst_Sector@:Associated-Metadata/Application_AdminInst_Name!</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Managing Institution sector</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#significance-InnovationCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#significance-InnovationCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria2%/Associated-Metadata/Scheme!=&quot;Program Grant&quot;&amp;&amp;/Associated-Metadata/Application_Year&lt;2019</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>&quot;Project Grants&quot; (historic data): Criteria 2</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#significanceCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#significanceCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria3%/Associated-Metadata/Scheme=&quot;Ideas Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Ideas Grants&quot;: Criteria 3=Significance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#startDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/FoR_Data/FOR_Date_Start@FoR_Registry</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private@FoR_Registry, public@GrantResearcher</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0@FoR_Registry, nhmrc-g0-public@GrantResearcher</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">start date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#startingYear -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#startingYear">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/startDate</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant starting year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#status -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#status">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/status</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#subject -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#subject">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/subjects</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant subjects</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#synergyCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#synergyCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria2%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>&quot;Synergy Grants&quot;: Criteria 2=Synergy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#synopsis -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#synopsis">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Synopsis</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">synopsis</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#trackRecordCriterion -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#trackRecordCriterion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Final_Score_Criteria3%/Associated-Metadata/Scheme!=&quot;Program Grant&quot;&amp;&amp;/Associated-Metadata/Application_Year&lt;2019</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:comment>&quot;Project Grants&quot; (historic data): Criteria 3</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#type -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#type">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/type</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">grant type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#year -->
+
+    <owl:DatatypeProperty rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#year">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Application_Year</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://eurocris.org/ontology/semcerif#ORCID -->
+
+    <owl:Class rdf:about="http://eurocris.org/ontology/semcerif#ORCID">
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/ORCID#</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">ORCID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#Assessment -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#Assessment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#finalScore"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#PP_finalScoreLinearised"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#RPcontributionToImpactCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#applicantContributionCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#collaborativeGainCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#feasibilityCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#innovationAndCreativityCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#knowledgeGainCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#leadershipCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#publicationsCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#reachAndSignificanceCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#researchAchievementsCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#researchQualityCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#researchStrategyCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#scientificQualityCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#significance-InnovationCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#significanceCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#synergyCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#trackRecordCriterion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Application_ID</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#BroadResearchArea -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#BroadResearchArea">
+        <agrif-md:JSON-mapping>Associated-Metadata/Broad_Research_Area!</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Broad Research Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#ChiefInvestigator -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#ChiefInvestigator">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Researcher"/>
+        <agrif-md:JSON-mapping>Associated-Metadata
++/Application_ID
++/Team_Data/Individual_ID</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Chief Investigator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#FoR -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#FoR">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#isFoRof"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Category"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#code"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/Field_of_Research_Code
+Associated-Metadata/Team_Data/FoR_Data/Field_of_Research_Code</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Field of Research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Category -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Category">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasFoR"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#code"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/FOR_Category_Code
+Associated-Metadata/Team_Data/FoR_Data/FOR_Category_Code</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Field of Research Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Registry -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Registry">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#about"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#endDate"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#isCurrent"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#startDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data
++/Individual_ID
++/FoR_Data/Field_of_Research_Code</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Field of Registry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#FundingDecision -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#FundingDecision">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/def/agrif#RecordDecisionEvent"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Application_Outcome!</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Funding Decision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#Grant -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#Grant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasApplication"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#GrantApplication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#relatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://ma-graph.org/class/Paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
+                <owl:someValuesFrom rdf:resource="http://ma-graph.org/class/Paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasStartedBy"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#GrantApplication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasManagingResearchInstitution"/>
+                <owl:allValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ManagingResearchInstitution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasGrantResearcher"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#GrantResearcher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasPeriod"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Period"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#funder"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#identifier"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#link"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#subject"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#description"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#fundingAmount"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#fundingScheme"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#grantID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#key"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#purl"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#status"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#type"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/id</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Grant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#GrantApplication -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#GrantApplication">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/def/agrif#DigitalArtefact"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#applicationOf"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Grant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasResearcher"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Researcher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasBroadResearchArea"/>
+                <owl:allValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#BroadResearchArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasFundingDecision"/>
+                <owl:allValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FundingDecision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasManagingResearchInstitution"/>
+                <owl:allValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ManagingResearchInstitution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasFoR"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasAssessment"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Assessment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasScheme"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Scheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#mediaSummary"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#synopsis"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#keyword"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#applicationID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#year"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>/Associated-Metadata/Application_ID</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Grant Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#GrantResearcher -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#GrantResearcher">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#endDate"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#startDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/researchers!</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>Grant Researcher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#Investigator -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#Investigator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasFoR_Registry"/>
+                <owl:allValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#FoR_Registry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#primaryAffiliation"/>
+                <owl:allValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ResearchInstitution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#hasORCID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://eurocris.org/ontology/semcerif#ORCID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#investigatorID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#fullName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/Individual_ID</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Investigator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#ManagingResearchInstitution -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#ManagingResearchInstitution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#about"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#ResearchInstitution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#endDate"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#startDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/managingInstitution!</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>Managing Research Institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#PartnerInvestigator -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#PartnerInvestigator">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Researcher"/>
+        <rdfs:comment>- We include this concept for generalization purposes.
+- In other use cases, such as with ARC, researchers might work with partner organisations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Partner Investigator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#Period -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#Period">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#acceptedDate"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#endingYear"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#modifiedDate"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#createdDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#startingYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <agrif-md:JSON-mapping>Associated-Metadata/ANDS_Grant_Data/id</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label>Grant Period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#ProjectScheme -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#ProjectScheme">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Scheme"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Scheme!%/Associated-Metadata/Scheme=&quot;Standard Project Grant&quot; || Associated-Metadata/Scheme!%/Associated-Metadata/Scheme=&quot;New Investigator Grant&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label>Project Scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#ResearchInstitution -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#ResearchInstitution">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/def/agrif#Organisation"/>
+        <agrif-md:JSON-mapping>Associated-Metadata/Team_Data/Primary_Institution!
+Associated-Metadata/Application_AdminInst_Name!</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Research Institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#Researcher -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#Researcher">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Role"/>
+        <agrif-md:graph-scope>public</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0-public</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Researcher: the role of the investigator in the grant application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#Role -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#Role">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#isRoleOf"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Investigator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/dataset/nhmrc/grants#Scheme -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/dataset/nhmrc/grants#Scheme">
+        <agrif-md:JSON-mapping>Associated-Metadata/Scheme!%/Associated-Metadata/Scheme=&quot;Ideas Grants&quot; || Associated-Metadata/Scheme!%/Associated-Metadata/Scheme=&quot;Synergy Grants&quot; || Associated-Metadata/Scheme!%/Associated-Metadata/Scheme=&quot;Program Grant&quot;</agrif-md:JSON-mapping>
+        <agrif-md:graph-scope>private</agrif-md:graph-scope>
+        <agrif-md:named-graph>nhmrc-g0</agrif-md:named-graph>
+        <rdfs:label xml:lang="en">Scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif#DigitalArtefact -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/def/agrif#DigitalArtefact"/>
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif#Organisation -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/def/agrif#Organisation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#State"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#sector"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://linked.data.gov.au/def/agrif#RecordDecisionEvent -->
+
+    <owl:Class rdf:about="http://linked.data.gov.au/def/agrif#RecordDecisionEvent"/>
+    
+
+
+    <!-- http://ma-graph.org/class/FieldOfStudy -->
+
+    <owl:Class rdf:about="http://ma-graph.org/class/FieldOfStudy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ma-graph.org/class/Paper -->
+
+    <owl:Class rdf:about="http://ma-graph.org/class/Paper">
+        <rdfs:subClassOf rdf:resource="http://linked.data.gov.au/def/agrif#DigitalArtefact"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#fundedBy"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Grant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#relatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Grant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                <owl:someValuesFrom rdf:resource="http://linked.data.gov.au/dataset/nhmrc/grants#Grant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+        <rdfs:comment>SKOS:
+&lt;https://www.w3.org/TR/skos-reference/&gt;
+
+Use of SKOS Semantic Relations:
+&lt;https://www.w3.org/TR/skos-reference/#semantic-relations&gt;
+
+NOTES:
+- We need to study more the intent of mag-class:FieldOfStudy.
+- We could not necessarily define this mapping.
+- We could potentially define it as owl:sameAs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

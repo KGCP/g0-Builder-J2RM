@@ -1,0 +1,38 @@
+{
+  "_id": "a42f103b46bd010ca449a62479ef17c5",
+  "_rev": "1-ef5265fcf19ea4a909d350d2e3817c2a",
+  "General-Metadata": {
+    "FILENAME": "recovery-plan-clay-pans-swan-coastal-plain-ec-2019.pdf",
+    "SEPARATOR": "\\",
+    "PARENT": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\recovery_plans\\tc",
+    "CANONICALPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\recovery_plans\\tc\\recovery-plan-clay-pans-swan-coastal-plain-ec-2019.pdf",
+    "ABSOLUTEPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\DoEE_endangered-species\\CAsAndRPs\\recovery_plans\\tc\\recovery-plan-clay-pans-swan-coastal-plain-ec-2019.pdf",
+    "FILE": "True",
+    "DIRECTORY": "False",
+    "FILELENGTH": 1368565,
+    "EXTENSION": "pdf",
+    "TYPE": "application/pdf",
+    "MODIFIED": "2019-11-22 02:25:00",
+    "DATE": "20191122",
+    "DATEPATTERN": "yyyyMMdd",
+    "TIME": "022500",
+    "TIMEPATTERN": "HHmmSS",
+    "CREATED": "2020-01-17 13:04:02.837383",
+    "CREATED-DATE": "20200117",
+    "CREATED-TIME": "130402"
+  },
+  "Use-Case$Folder": "tc",
+  "Specific-Metadata": { },
+  "Associated-Metadata": [
+    {
+      "asset_type": "tc",
+      "listed_id": "121",
+      "Description": "Clay Pans of the Swan Coastal Plain",
+      "ref_type": "CWLTH RECOVERY PLAN",
+      "url": "http://www.environment.gov.au/biodiversity/threatened/publications/recovery/clay-pans-swan-coastal-plain-ec-2019",
+      "Web_location": "http://www.environment.gov.au/system/files/resources/526ec2bf-d94d-4226-a0e1-12cc0f965244/files/recovery-plan-clay-pans-swan-coastal-plain-ec-2019.pdf",
+      "file_name": "recovery-plan-clay-pans-swan-coastal-plain-ec-2019.pdf",
+      "Row_Number_in_Spreadsheet": 23
+    }
+  ]
+}

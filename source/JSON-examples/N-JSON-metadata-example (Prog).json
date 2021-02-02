@@ -1,0 +1,294 @@
+{
+  "_id": "bb3f894aa039c20598efe6d09a576409",
+  "_rev": "1-a17f75d5b9507d52c00abd727918e784",
+  "General-Metadata": {
+    "FILENAME": "APP1037903_4 APP1037903_Barter.pdf",
+    "SEPARATOR": "\\",
+    "PARENT": "\\\\?\\E:\\_temp\\DepFin-Project\\NHMRC\\ANU_History\\Program Grants\\2011\\APP1037903",
+    "CANONICALPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\NHMRC\\ANU_History\\Program Grants\\2011\\APP1037903\\APP1037903_4 APP1037903_Barter.pdf",
+    "ABSOLUTEPATH": "\\\\?\\E:\\_temp\\DepFin-Project\\NHMRC\\ANU_History\\Program Grants\\2011\\APP1037903\\APP1037903_4 APP1037903_Barter.pdf",
+    "FILE": "True",
+    "DIRECTORY": "False",
+    "FILELENGTH": 223525,
+    "EXTENSION": "pdf",
+    "TYPE": "application/pdf",
+    "MODIFIED": "2011-11-29 14:14:47",
+    "DATE": "20111129",
+    "DATEPATTERN": "yyyyMMdd",
+    "TIME": "141447",
+    "TIMEPATTERN": "HHmmSS",
+    "CREATED": "2020-01-31 14:07:00.137473",
+    "CREATED-DATE": "20200131",
+    "CREATED-TIME": "140700"
+  },
+  "Use-Case$Folder": "APP1037903",
+  "Specific-Metadata": { },
+  "Associated-Metadata": {
+    "Application_ID": "APP1037903",
+    "Application_Year": "2011",
+    "CIA_ID_Application": "5013356",
+    "CIA_Name_Application": "Prof Philip Barter",
+    "Scheme": "Program Grant",
+    "Application_AdminInst_Name": "University of Sydney",
+    "Application_AdminInst_State": "NSW",
+    "Application_AdminInst_Sector": "University",
+    "Final_Score": "76.3",
+    "Final_Score_Linearised": "78.51",
+    "Application_Outcome": "Funded",
+    "Title_Cleaned": "Atherosclerosis - the key roles of HDL, cell cholesterol metabolism and vascular function",
+    "Keywords": "atherogenesis | apolipoproteins | blood lipid metabolism | cholesterol metabolism | cholesterylester transfer protein (cetp) | diabetic complications | high density lipoproteins (hdl) | lipoproteins | vascular dysfunction",
+    "Media_Summary": "Atherosclerosis, an accumulation of cholesterol in the artery wall, is a major cause of illness and premature death worldwide. It is caused by conditions such as low levels of the protective high density lipoproteins (HDLs), diabetes, smoking and abnormal function of arteries, all of which are linked to disorders of cholesterol metabolism. With our expertise in HDLs, cholesterol metabolism and artery function, our research will lead to the development of novel strategies for early detection and prevention of atherosclerosis and heart disease.",
+    "Synopsis": "Despite substantial advances, atherosclerosis remains a major cause of morbidity and premature death worldwide. To a large extent, this is the consequence of the high (and rising) prevalence of conditions such as a low level of the protective high density lipoproteins (HDLs), insulin resistance and type 2 diabetes, smoking and vascular dysfunction. There is compelling evidence of complex interrelationships between these abnormalities and disorders of cell cholesterol metabolism, leading ultimately to the development of atherosclerosis and clinical cardiovascular disease. With a long and outstanding track record of expertise and collaborative achievement in the areas of HDL biology, cell cholesterol metabolism and vascular function, we are ideally placed to address a series of major unanswered questions that relate specifically to the relationship of the aforementioned conditions to the persistently high occurrence of atherosclerosis. The research programs proposed in this application will lead to the development of novel strategies for reducing cardiovascular risk. The research plan includes closely inter-related basic and human studies addressing fundamental questions concerning the protective properties of HDL, the regulation of cell cholesterol metabolism and their relationship with vascular function. The human studies will span factors operating in utero and in childhood to an understanding of how a range of lifestyle factors and conditions, such as obesity and type 2 diabetes in adult life, impact on vascular function, cell cholesterol metabolism and the cardioprotective functions of HDLs. In addition to advancing understanding of the origins and development of atherosclerosis, the research proposed in this program will generate novel approaches designed to prevent and reverse atherosclerosis.",
+    "Broad_Research_Area": "Clinical Medicine and Science",
+    "FOR_Category_Code": "1102",
+    "FOR_Category": "CARDIORESPIRATORY MEDICINE AND HEAMATOLOGY",
+    "Field_of_Research_Code": "110201",
+    "Field_of_Research": "Cardiology (incl. Cardiovascular Diseases)",
+    "Final_Score_Criteria1": "",
+    "Final_Score_Criteria2": "",
+    "Final_Score_Criteria3": "",
+    "Final_Score_Criteria4": "",
+    "Final_Score_Criteria5": "",
+    "Final_Score_Criteria6": "",
+    "Row_Number_in_Spreadsheet": 784,
+    "ANDS_Grant_Data": [
+      {
+        "description": "Atherosclerosis, an accumulation of cholesterol in the artery wall, is a major cause of illness and premature death worldwide. It is caused by conditions such as low levels of the protective high density lipoproteins (HDLs), diabetes, smoking and abnormal function of arteries, all of which are linked to disorders of cholesterol metabolism. With our expertise in HDLs, cholesterol metabolism and artery function, our research will lead to the development of novel strategies for early detection and prevention of atherosclerosis and heart disease.",
+        "title": "Atherosclerosis - the key roles of HDL, cell cholesterol metabolism and vascular function",
+        "id": "111107",
+        "institutions": [
+          "University of New South Wales"
+        ],
+        "key": "http://purl.org/au-research/grants/nhmrc/1037903",
+        "researchers": [
+          "Prof Leonard Kritharides",
+          "Prof Philip Barter",
+          "Prof Kerry-Anne Rye",
+          "Prof Wendy Jessup",
+          "Prof David Celermajer"
+        ],
+        "type": "grant",
+        "status": "closed",
+        "fundingAmount": 8174167.5,
+        "fundingScheme": "Program Grants",
+        "startDate": 2013,
+        "endDate": 2017,
+        "dateTimeModified": "2018-03-07T07:52:36Z",
+        "dateTimeCreated": "2013-05-15T07:21:46Z",
+        "funder": [
+          "National Health and Medical Research Council"
+        ],
+        "managingInstitution": [
+          "University of New South Wales"
+        ],
+        "principalInvestigator": [
+          "Prof Philip Barter"
+        ],
+        "purl": "http://purl.org/au-research/grants/nhmrc/1037903",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/1037903",
+          "1037903"
+        ],
+        "subjects": [
+          "Cardiology (incl. Cardiovascular Diseases)",
+          "MEDICAL AND HEALTH SCIENCES",
+          "CARDIORESPIRATORY MEDICINE AND HAEMATOLOGY",
+          "atherogenesis",
+          "apolipoproteins",
+          "blood lipid metabolism",
+          "cholesterol metabolism",
+          "cholesterylester transfer protein (CETP)",
+          "diabetic complications",
+          "high density lipoproteins (HDL)",
+          "lipoproteins",
+          "vascular dysfunction"
+        ],
+        "links": [
+          {
+            "rel": "self",
+            "href": "http://researchdata.edu.au/api/v2.0/registry/activities/grants/111107"
+          }
+        ]
+      },
+      {
+        "description": "Atherosclerosis, an accumulation of cholesterol in the artery wall, is a major cause of illness and premature death worldwide. It is caused by conditions such as low levels of the protective high density lipoproteins (HDLs), diabetes, smoking and abnormal function of arteries, all of which are linked to disorders of cholesterol metabolism. With our expertise in HDLs, cholesterol metabolism and artery function, our research will lead to the development of novel strategies for early detection and prevention of atherosclerosis and heart disease.",
+        "title": "Atherosclerosis - the key roles of HDL, cell cholesterol metabolism and vascular function",
+        "id": "1344359",
+        "institutions": [
+          "University of New South Wales"
+        ],
+        "key": "http://purl.org/au-research/grants/nhmrc/GNT1037903",
+        "researchers": [
+          "Prof David Celermajer",
+          "Prof Philip Barter",
+          "Prof Leonard Kritharides",
+          "Prof KerryAnne Rye",
+          "Prof Wendy Jessup"
+        ],
+        "type": "grant",
+        "status": "closed",
+        "fundingAmount": 7085050,
+        "fundingScheme": "Programs",
+        "startDate": 2013,
+        "endDate": 2017,
+        "dateTimeModified": "2018-10-03T01:49:25Z",
+        "dateTimeCreated": "2018-10-03T01:49:25Z",
+        "funder": [
+          "National Health and Medical Research Council"
+        ],
+        "managingInstitution": [
+          "University of New South Wales"
+        ],
+        "principalInvestigator": [
+          "Prof Philip Barter"
+        ],
+        "purl": "http://purl.org/au-research/grants/nhmrc/GNT1037903",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/GNT1037903",
+          "GNT1037903"
+        ],
+        "subjects": [
+          "Cardiology (incl. Cardiovascular Diseases)",
+          "MEDICAL AND HEALTH SCIENCES",
+          "CARDIORESPIRATORY MEDICINE AND HAEMATOLOGY",
+          "atherogenesis",
+          "apolipoproteins",
+          "cholesterol metabolism",
+          "cholesterylester transfer protein (cetp)",
+          "diabetic complications",
+          "high density lipoproteins (hdl)",
+          "lipoproteins",
+          "vascular dysfunction"
+        ],
+        "links": [
+          {
+            "rel": "self",
+            "href": "http://researchdata.edu.au/api/v2.0/registry/activities/grants/1344359"
+          }
+        ]
+      }
+    ],
+    "Team_Data": [
+      {
+        "Individual_ID": "5013356",
+        "Member_Role": "CIA",
+        "Full_Name": "Prof Philip Barter",
+        "Primary_Institution": "University of New South Wales",
+        "ORCID": "",
+        "Row_Number_in_Spreadsheet": 2626,
+        "FoR_Data": [
+          {
+            "FOR_Category_Code": "1101",
+            "FOR_Category": "MEDICAL BIOCHEMISTRY AND METABOLOMICS",
+            "Field_of_Research_Code": "110104",
+            "Field_of_Research": "Medical Biochemistry: Lipids",
+            "FOR_Date_Start": "2009-01-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 1461
+          },
+          {
+            "FOR_Category_Code": "1102",
+            "FOR_Category": "CARDIORESPIRATORY MEDICINE AND HEAMATOLOGY",
+            "Field_of_Research_Code": "110201",
+            "Field_of_Research": "Cardiology (incl. Cardiovascular Diseases)",
+            "FOR_Date_Start": "2009-01-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 1462
+          }
+        ]
+      },
+      {
+        "Individual_ID": "5012359",
+        "Member_Role": "CIB",
+        "Full_Name": "Prof David Celermajer",
+        "Primary_Institution": "University of Sydney",
+        "ORCID": "",
+        "Row_Number_in_Spreadsheet": 2627,
+        "FoR_Data": [
+          {
+            "FOR_Category_Code": "1102",
+            "FOR_Category": "CARDIORESPIRATORY MEDICINE AND HEAMATOLOGY",
+            "Field_of_Research_Code": "110201",
+            "Field_of_Research": "Cardiology (incl. Cardiovascular Diseases)",
+            "FOR_Date_Start": "2006-01-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "No ",
+            "Row_Number_in_Spreadsheet": 951
+          }
+        ]
+      },
+      {
+        "Individual_ID": "5017295",
+        "Member_Role": "CIC",
+        "Full_Name": "Prof Kerry-Anne Rye",
+        "Primary_Institution": "University of New South Wales",
+        "ORCID": "",
+        "Row_Number_in_Spreadsheet": 2628,
+        "FoR_Data": [
+          {
+            "FOR_Category_Code": "1102",
+            "FOR_Category": "CARDIORESPIRATORY MEDICINE AND HEAMATOLOGY",
+            "Field_of_Research_Code": "110201",
+            "Field_of_Research": "Cardiology (incl. Cardiovascular Diseases)",
+            "FOR_Date_Start": "1986-02-06",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 4812
+          },
+          {
+            "FOR_Category_Code": "1103",
+            "FOR_Category": "CLINICAL SCIENCES",
+            "Field_of_Research_Code": "110306",
+            "Field_of_Research": "Endocrinology",
+            "FOR_Date_Start": "2008-01-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 4813
+          }
+        ]
+      },
+      {
+        "Individual_ID": "5015795",
+        "Member_Role": "CID",
+        "Full_Name": "Prof Leonard Kritharides",
+        "Primary_Institution": "University of Sydney",
+        "ORCID": "",
+        "Row_Number_in_Spreadsheet": 2629,
+        "FoR_Data": [
+          {
+            "FOR_Category_Code": "1102",
+            "FOR_Category": "CARDIORESPIRATORY MEDICINE AND HEAMATOLOGY",
+            "Field_of_Research_Code": "110201",
+            "Field_of_Research": "Cardiology (incl. Cardiovascular Diseases)",
+            "FOR_Date_Start": "1991-01-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 3594
+          }
+        ]
+      },
+      {
+        "Individual_ID": "5018941",
+        "Member_Role": "CIE",
+        "Full_Name": "Prof Wendy Jessup",
+        "Primary_Institution": "ANZAC Research Institute",
+        "ORCID": "",
+        "Row_Number_in_Spreadsheet": 2630,
+        "FoR_Data": [
+          {
+            "FOR_Category_Code": "601",
+            "FOR_Category": "BIOCHEMISTRY AND CELL BIOLOGY",
+            "Field_of_Research_Code": "60199",
+            "Field_of_Research": "Biochemistry and Cell Biology not elsewhere classified",
+            "FOR_Date_Start": "1990-01-01",
+            "FOR_Date_End": "",
+            "FOR_Current": "Yes",
+            "Row_Number_in_Spreadsheet": 6056
+          }
+        ]
+      }
+    ]
+  }
+}
