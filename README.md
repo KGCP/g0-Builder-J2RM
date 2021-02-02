@@ -8,11 +8,11 @@
 
 ## J2RM Architecture
 
-![Architecture](https://github.com/srodriguez142857/J2RM/blob/master/J2RM%20-%20Architecture.png)
+![Architecture](https://github.com/g0-Builder-J2RM/g0-Builder-J2RM/blob/master/J2RM%20-%20Architecture.png)
 
 ## Contacts
 
 - Sergio Rodriguez <`Sergio.RodriguezMendez [at] anu.edu.au`>
 
 ## License
-J2RM is publicly available under an MIT license, as specified in the [LICENSE](https://github.com/srodriguez142857/J2RM/blob/master/LICENSE) file.
+{g0-Builder+J2RM} is publicly available under an MIT license, as specified in the [LICENSE](https://github.com/g0-Builder-J2RM/g0-Builder-J2RM/blob/master/LICENSE) file.
